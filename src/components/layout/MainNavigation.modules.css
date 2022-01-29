@@ -1,0 +1,83 @@
+.header {
+    /* width: 100%; */
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #77002e;
+    padding: 0 10%;
+}
+.logo {
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+}
+.header ul {
+    list-style: none;
+    margin: 10px;
+    padding: 0 ;
+    display: flex;
+    align-items: baseline;
+}
+.header li {
+    margin-left: 3rem;
+}
+.header a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #fcb8d2;
+}
+.header a:hover,
+.header a:active,
+.header a:active {
+    color: white;
+}
+.badge {
+    background-color: #cc2062;
+    color: white;
+    border-radius: 12px;
+    padding: 0 1rem;
+    margin-left: 0.5rem;
+}
+.list {
+    text-align: center;
+    list-style: none;
+    padding: 0;
+
+}
+.list li {
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+}
+.image img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+.actions button {
+    outline: none;
+    border: none;
+    background-color: white;
+    color: #77002e;
+    border: 1px solid #77002e;
+    padding: 10px 17px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.container__list {
+    display: flex;
+    width: 650px;
+    overflow: hidden;
+    box-shadow: 0 5px 30px rgba(0,0,0,0.2);
+    border-radius: 8px;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.actions button:hover {
+    background-color: #ddb7c5;
+}
+.actions button:active {
+    background-color: #9b4162;
+
+}
