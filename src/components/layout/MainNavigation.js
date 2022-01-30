@@ -1,6 +1,9 @@
 import { Link } from 'react-router-dom'
 import './MainNavigation.modules.css'
+import { FavoritesContext } from '../../store/favorites-context';
+import { useContext } from 'react';
 function MainNavigation() {
+    const favoritesContext = useContext(FavoritesContext)
     return (
         <header className='header'>
             <div className='logo'>React Meetups</div>
@@ -14,6 +17,7 @@ function MainNavigation() {
                     </li> 
                     <li>
                         <Link to="/favorites">My Favorites</Link>
+                        {favoritesContext.totalFavorites !== 0 && (<span className='badge'>{favoritesContext.totalFavorites}</span>)}
                     </li>
                 </ul>
             </nav>

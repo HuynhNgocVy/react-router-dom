@@ -52,7 +52,7 @@ function AllMeetupPage() {
     }
     return (
         <section>
-            <h1 style={{display:"flex", justifyContent:"center"}}>All Meetups</h1>
+            <h1  style={{fontSize:"2rem", fontWeight:"bold", color:"#a50e48", textAlign:"center"}}>All Meetups</h1>
             <MeetupList meetups={arrayMeetups.current} />
         </section>
     )
